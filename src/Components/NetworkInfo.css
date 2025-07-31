@@ -1,0 +1,66 @@
+.network-container {
+  padding: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  text-align: center;
+  background-color: #cdc7c7;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.network-container.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.network-card {
+  background: linear-gradient(135deg, #dff9fb, #f6e58d);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.network-container.dark .network-card {
+  background: linear-gradient(135deg, #2f3640, #353b48);
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 600px) {
+  .network-card {
+    font-size: 0.95rem;
+  }
+
+  .toggle-button {
+    font-size: 0.9rem;
+  }
+}
